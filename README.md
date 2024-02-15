@@ -19,6 +19,11 @@ O projeto segue a estrutura abaixo, com cada aula em um diretório específico:
 ## Desafios Tecnicos
 - [CodeSignal Arcade](https://app.codesignal.com/arcade/db): Uma sequencia de desafios tecnicos em SQL
 
+## Links Adicionais
+ - [Dado x Conhecimento x Informação](https://www.estrategiaconcursos.com.br/blog/dado-informacao-conhecimento-inteligencia/#): Artigo pontuando a diferença entre os conceitos.
+ - [Diagramas ER](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-entidade-relacionamento): Artigo que aborda o uso de diagramas ER em seus modelos conceitual, lógico e físico.
+ - [Modelo Conceitual x Lógico x Físico](https://pt.stackoverflow.com/questions/294699/qual-a-diferen%C3%A7a-entre-modelagem-conceitual-l%C3%B3gica-e-f%C3%ADsica): Aprofundamento dos diferentes modelos de diagramas ER.
+
 **Aécio Mendes Brito**
 
 [Informática Para Internet - Senac São Paulo]
