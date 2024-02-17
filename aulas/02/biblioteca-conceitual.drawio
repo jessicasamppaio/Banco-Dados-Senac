@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Página-1" id="XFu26MOCRIbofugtZvZ-">
-        <mxGraphModel dx="472" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="539" dy="287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -23,14 +23,6 @@
                 </mxCell>
                 <mxCell id="azss607aFff3kSMOutLu-24" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;labelBorderColor=none;" parent="azss607aFff3kSMOutLu-11" vertex="1" connectable="0">
                     <mxGeometry x="-0.2429" y="-1" relative="1" as="geometry">
-                        <mxPoint as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="azss607aFff3kSMOutLu-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;labelBackgroundColor=none;labelBorderColor=none;" parent="1" source="azss607aFff3kSMOutLu-3" target="azss607aFff3kSMOutLu-19" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="azss607aFff3kSMOutLu-30" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;labelBorderColor=none;" parent="azss607aFff3kSMOutLu-20" vertex="1" connectable="0">
-                    <mxGeometry x="-0.1762" y="2" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
@@ -110,17 +102,6 @@
                 </mxCell>
                 <mxCell id="azss607aFff3kSMOutLu-16" value="CONCLUI" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;labelBackgroundColor=none;labelBorderColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="320" y="440" width="80" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="azss607aFff3kSMOutLu-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;labelBackgroundColor=none;labelBorderColor=none;" parent="1" source="azss607aFff3kSMOutLu-19" target="azss607aFff3kSMOutLu-6" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="azss607aFff3kSMOutLu-31" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;labelBorderColor=none;" parent="azss607aFff3kSMOutLu-21" vertex="1" connectable="0">
-                    <mxGeometry x="-0.0571" y="-1" relative="1" as="geometry">
-                        <mxPoint as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="azss607aFff3kSMOutLu-19" value="SOLICITA" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;labelBackgroundColor=none;labelBorderColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="140" y="320" width="80" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
