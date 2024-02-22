@@ -42,7 +42,7 @@ Curso:
 Disciplina:
 - ID (PK), Nome
 Professor:
-- ID (PK), Nome
+- ID (PK), Nome, Especializacao
 Matricula:
 - Aluno_ID (FK), Curso_ID (FK), Data
 Cursos_Disciplinas:
