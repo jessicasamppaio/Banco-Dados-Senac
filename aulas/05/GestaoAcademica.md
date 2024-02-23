@@ -11,6 +11,7 @@ Exercício:
 Com base no contexto apresentado, identifique as entidades e seus relacionamentos. Em seguida, elabore um modelo conceitual que represente as relações entre essas entidades.
 
 Entidades:
+<<<<<<< HEAD
 Curso
 Professor
 Aluno
@@ -26,6 +27,23 @@ Um aluno pode se matricular em um ou mais cursos
 Um curso pode ter vários alunos
 Um aluno realiza uma ou mais Matriculos
 Uma Matricula está associada a um Aluno e um Curso
+=======
+- Curso
+- Aluno
+- Disciplina
+- Professor
+- Matrícula
+
+Relacionamentos
+- Um Aluno se matricula em um ou mais Cursos
+- Um Curso pode conter vários Alunos
+- Um Curso é composto por várias Disciplinas
+- Uma Disciplina pode pertencer a diferentes Cursos
+- Um Professor leciona uma ou mais Disciplinas
+- Uma Disciplina pode ser lecionada por um ou mais Professores
+- Um Aluno realiza uma ou mais Matrículas
+- Uma Matrícula está associada a um Aluno e um Curso
+>>>>>>> fee64f542362496cb4781eaa9444a69361c1bfc7
 
 Agora, com base nessas entidades e relacionamentos, desenvolva um modelo conceitual no DrawIO representando visualmente a estrutura e as interações entre esses elementos.
 
@@ -33,6 +51,7 @@ Agora, com base nessas entidades e relacionamentos, desenvolva um modelo conceit
 
 A transição do modelo conceitual para o modelo lógico envolve a representação mais específica das entidades, atributos, relacionamentos e chaves no contexto de um Sistema de Gestão Acadêmica.
 
+<<<<<<< HEAD
 Tabelas:
 Curso
 Professor
@@ -42,6 +61,27 @@ Matricula
 
 Chaves Primárias e Estrangeiras:
 
+=======
+### Tabelas:
+
+Aluno:
+- Matricula (PK), Nome
+Curso:
+- ID (PK), Nome
+Disciplina:
+- ID (PK), Nome
+Professor:
+- ID (PK), Nome, Especializacao
+Matricula:
+- Aluno_ID (FK), Curso_ID (FK), Data
+Cursos_Disciplinas:
+- Curso_ID (FK), Disciplina_ID(FK)
+Professor_Disciplina:
+- Professor_ID (FK), Disciplina_ID (FK)
+
+Chaves Primárias e Estrangeiras:
+ - Relacionado nas tabelas!
+>>>>>>> fee64f542362496cb4781eaa9444a69361c1bfc7
 
 Agora, com base nessas entidades e relacionamentos, desenvolva um modelo lógico no DrawIO representando visualmente a estrutura completas e as interações entre esses elementos, com seus campos chave refletindo essas interações e seus atributos definidos.
 
