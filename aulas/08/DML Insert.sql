@@ -45,6 +45,27 @@ Insert INTO professor values
  (3, 3),
  (4, 1),
  (5, 3);
+ 
+ UPDATE professor
+ SET especializacao = 'Inteligencia Artificial'
+ WHERE Id = 5;
+ 
+ UPDATE disciplina 
+ SET nome = 'HTML/CSS', horas = '50'
+ WHERE id = 3;
+ 
+SELECT * from disciplina;
+ 
+UPDATE disciplina
+SET horas = 40
+WHERE horas > 40;
+
+DELETE FROM disciplina WHERE id = 3;
+
+
+ 
+ 
+ 
 
 
 
