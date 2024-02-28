@@ -58,3 +58,5 @@ FROM curso
 WHERE nome LIKE '%Medicina' OR nome LIKE 'D%';
 
 -- Utilizando o DISTINCT para Obter Valores Distintos
+
+SELECT DISTINCT especializacao FROM professor;
