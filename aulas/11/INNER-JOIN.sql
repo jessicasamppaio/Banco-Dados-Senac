@@ -43,8 +43,9 @@ INSERT INTO CIDADE (Nome, Estado_ID) VALUES
 -- -----------------------
 -- Consultas SQL com JOINs
 -- -----------------------
-
-SELECT cidade.ID, cidade.nome, estado.nome AS Nome_Estado, estado.sigla AS UF
+SELECT CIDADE.Nome, Estado.Nome AS Nome_Estado, ESTADO.Sigla AS UF
 FROM CIDADE
 INNER JOIN ESTADO ON CIDADE.Estado_ID = ESTADO.ID;
+
+
 

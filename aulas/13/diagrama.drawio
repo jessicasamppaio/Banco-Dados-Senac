@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net" modified="2024-03-01T22:56:34.330Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="l3aWn3oiB71hICYbarTz" version="23.1.8" type="device">
+  <diagram name="Página-1" id="9RXjXG0WkF9Pd9aUlTbI">
+    <mxGraphModel dx="817" dy="1228" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-1" value="LEFT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=#dae8fc;strokeColor=#6c8ebf;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="-111" y="-176" width="156" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-2" value="RIGHT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=none;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="77" y="-179" width="164" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-5" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;LEFT E RIGHT&lt;/span&gt;&lt;/h1&gt;&lt;h1&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;Ao selecionar uma tabela para um relação inicial (SELECT * FROM TABELA), entenda essa como a tabela da esquerda left A tabela a ser sscociada JOIN TABELA sera a da direia (right).&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="307" y="-161" width="273" height="173" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-6" value="LEFT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=#dae8fc;strokeColor=#6c8ebf;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="-111" y="67" width="175" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-7" value="RIGHT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=none;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="8" y="68.25" width="177" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeColor=#FFFFFF;fontSize=12;fontColor=#FFFFFF;startSize=8;endSize=8;" edge="1" parent="1" source="HUmtZ71Q65n_QN9F1TIj-8" target="HUmtZ71Q65n_QN9F1TIj-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;strokeColor=#FFFFFF;fontSize=12;fontColor=#FFFFFF;startSize=8;endSize=8;" edge="1" parent="1" source="HUmtZ71Q65n_QN9F1TIj-8" target="HUmtZ71Q65n_QN9F1TIj-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-22" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FFFFFF;fontSize=12;fontColor=#FFFFFF;startSize=8;endSize=8;" edge="1" parent="1" source="HUmtZ71Q65n_QN9F1TIj-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="156.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-8" value="INNER" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="37" y="152" width="3" height="9.5" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;strokeColor=#FFFFFF;fontSize=12;fontColor=#FFFFFF;startSize=8;endSize=8;" edge="1" parent="1" source="HUmtZ71Q65n_QN9F1TIj-8" target="HUmtZ71Q65n_QN9F1TIj-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;strokeColor=#FFFFFF;fontSize=12;fontColor=#FFFFFF;startSize=8;endSize=8;" edge="1" parent="1" source="HUmtZ71Q65n_QN9F1TIj-8" target="HUmtZ71Q65n_QN9F1TIj-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-15" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FFFFFF;fontSize=12;fontColor=#FFFFFF;startSize=8;endSize=8;" edge="1" parent="1" source="HUmtZ71Q65n_QN9F1TIj-8" target="HUmtZ71Q65n_QN9F1TIj-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;strokeColor=#FFFFFF;fontSize=12;fontColor=#FFFFFF;startSize=8;endSize=8;" edge="1" parent="1" source="HUmtZ71Q65n_QN9F1TIj-8" target="HUmtZ71Q65n_QN9F1TIj-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-17" value="&lt;h1&gt;INNER JOIN&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="262" y="88" width="287" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-18" value="LEFT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=#dae8fc;strokeColor=#6c8ebf;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="-111" y="309" width="175" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-19" value="RIGHT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;opacity=30;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="8" y="310.25" width="177" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-20" value="LEFT" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="8" y="383.75" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-23" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;RIGHT JOIN&lt;/span&gt;&lt;/h1&gt;&lt;h1&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="282" y="346" width="273" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-24" value="LEFT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=#dae8fc;strokeColor=#6c8ebf;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="-109.5" y="560" width="175" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-25" value="RIGHT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=#f5f5f5;strokeColor=#666666;opacity=30;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="9.5" y="561.25" width="177" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-26" value="RIGHT" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="21" y="642.25" width="35" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-28" value="LEFT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;opacity=40;" vertex="1" parent="1">
+          <mxGeometry x="-109.5" y="812" width="175" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-29" value="RIGHT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="9.5" y="813.25" width="177" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-30" value="FULL" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="8.5" y="884.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-31" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;RIGHT JOIN&lt;/span&gt;&lt;/h1&gt;&lt;h1&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="262" y="565" width="273" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="HUmtZ71Q65n_QN9F1TIj-32" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;FULL JOIN&lt;/span&gt;&lt;/h1&gt;&lt;h1&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="262" y="799" width="273" height="177" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
