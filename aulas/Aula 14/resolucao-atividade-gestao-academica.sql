@@ -19,6 +19,10 @@
     where horas > 40;
 
 -- Contar quantas matrículas existem para cada curso
+
+/* pesquisei no google para saebr como fazer com um unico comando
+pois só sabia verificar um curso por vez*/
+
 	SELECT Curso_ID, COUNT(*) as Quantidade_Matriculas
 	FROM matricula
 	GROUP BY Curso_ID;
