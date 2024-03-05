@@ -4,7 +4,7 @@
 	select * from aluno;
     
 -- Selecionar apenas os nomes e CPFs dos alunos
-	select aluno.nome, aluno.cpf
+	select nome, cpf
 	from aluno;
 
 -- Selecionar alunos matriculados após uma data específica
