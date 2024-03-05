@@ -47,6 +47,5 @@ pois só sabia verificar um curso por vez*/
 	JOIN curso ON aluno.matricula = curso.ID;
 
 -- Contar quantos alunos se matricularam em cada curso
-    SELECT Curso_ID, COUNT(*) as Quantidade_Matriculas
-	FROM matricula
-	GROUP BY Curso_ID;
+    
+	/*Não consegui realizar*/
