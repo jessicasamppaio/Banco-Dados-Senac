@@ -18,3 +18,15 @@ RENAME USER 'aplicacao'@'localhost' TO 'aplicacao'@'%'
 
 -- Remover um usuário
 DROP USER 'aplicacao'@'%'
+
+-- Conceder permissões necessárias para usuário acessar o BD desejado
+-- GRANT tipo_de_permissao ON nome_do_banco.nome_da_tabela TO 'usuario'@'lugar';
+
+GRANT ALL PRIVILEGES ON gestaoacademica.* TO 'aplicacao'@'localhost';
+GRANT SELECT ON compras.pedido TO 'aplicacao'@'localhost';
+
+-- Verificar permissões por usuário
+SHOW GRANTS FOR 'aplicacao'@'localhost';
+
+-- Revogar permissões 
+REVOKE tipo_permissao ON banco.tabela FROM 'usuario'@'local';
