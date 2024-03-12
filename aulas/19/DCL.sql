@@ -29,4 +29,6 @@ GRANT SELECT ON compras.pedido TO 'aplicacao'@'localhost';
 SHOW GRANTS FOR 'aplicacao'@'localhost';
 
 -- Revogar permissões 
-REVOKE tipo_permissao ON banco.tabela FROM 'usuario'@'local';
+-- REVOKE tipo_permissao ON banco.tabela FROM 'usuario'@'local';
+
+REVOKE select ON compras.pedido FROM 'aplicacao'@'localhost';
