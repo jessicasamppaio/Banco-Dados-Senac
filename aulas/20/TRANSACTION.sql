@@ -14,5 +14,3 @@ UPDATE produto SET quantidade = quantidade - 6 WHERE ID = 4;
 
 -- Desfazendo a transação
 COMMIT;
-
-

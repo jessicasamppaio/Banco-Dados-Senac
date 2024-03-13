@@ -1,4 +1,4 @@
-# Aulas de Banco de Dados - Curso no Senac
+# Banco de Dados | Curso Técnico em Informática para Internet - Senac
 
 Bem-vindo ao repositório das aulas de Banco de Dados do curso que estou realizando no Senac. Aqui você encontrará materiais, códigos e recursos relacionados às aulas ministradas durante o curso.
 
