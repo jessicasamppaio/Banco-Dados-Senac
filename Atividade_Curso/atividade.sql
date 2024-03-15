@@ -42,14 +42,57 @@ DROP TABLE Fornecedor;
 #################### DML
 -- 0. Crie ao menos 5 registros para cada tabela, ignorando o gerneciamento de usuários. Um dos clientes deverá ter o seu nome
 
-SELECT * FROM categoria
+SELECT * FROM FormaPagamento
 
-INSERT INTO Categoria(Id, Nome, Descricao, DataCriacao, DataAtualizacao, UsuarioAtualizacao, Ativo) VALUES
-('1', 'Maria Julia', 'hdkfjh', '2024-02-12', '2024-02-12', '2024-02-12', 'sim'),
-('2', 'João Luís', 'kdkfjh', '2024-023-20', '2024-023-20', '2024-023-20', 'sim'),
-('3', 'Luís Marques', 'wdkfjh', '2024-05-25', '2024-05-25', '2024-05-25', 'não'),
-('4', 'Camila Andrade', 'hdkfjh', '2024-08-10', '2024-08-10', '2024-08-10', 'não'),
-('5', 'Lucas Camilo', 'kdkfjh', '2024-01-30', '2024-01-30', '2024-01-30', 'sim');
+INSERT INTO Cliente (Nome, Email, Telefone, UsuarioAtualizacao) VALUES 
+    ('Maria Silva', 'maria@email.com', '123456789', 1),
+    ('João Santos', 'joao@email.com', '987654321', 2),
+    ('Ana Souza', 'ana@email.com', '555555555', 1),
+    ('Pedro Oliveira', 'pedro@email.com', '111111111', 2),
+    ('Carla Ferreira', 'carla@email.com', '999999999', 1);
+
+INSERT INTO FormaPagamento (Nome, Descricao, UsuarioAtualizacao) VALUES 
+    ('Cartão', 'Pagamento feito através de cartão.', 1),
+    ('Dinheiro', 'Pagamento realizado através de dinheiro.', 2);
+
+INSERT INTO Pedido (ClienteID, DataPedido, FormaPagamentoId, Status, UsuarioAtualizacao) VALUES 
+    (1, '2024-03-14 10:00:00', 1, 'Em processamento', 1),
+    (2, '2024-03-14 11:30:00', 2, 'Aguardando pagamento', 2),
+    (3, '2024-03-14 12:45:00', 1, 'Em processamento', 1),
+    (4, '2024-03-14 13:20:00', 3, 'Concluído', 2),
+    (5, '2024-03-14 14:10:00', 2, 'Em processamento', 1);
+    
+    INSERT INTO Categoria (Nome, Descricao, UsuarioAtualizacao) VALUES 
+    ('Eletrônicos', 'Produtos eletrônicos e tecnológicos.', 1),
+    ('Roupas', 'Moda feminina, masculina e infantil.', 2),
+    ('Livros', 'Livros de diversos gêneros e autores.', 1),
+    ('Alimentos', 'Produtos alimentícios diversos.', 2),
+    ('Móveis', 'Móveis para casa e escritório.', 1);
+    
+    INSERT INTO GrupoUsuario (Nome, Descricao, UsuarioAtualizacao) VALUES 
+    ('Administradores', 'Grupo de usuários com permissões administrativas.', 1),
+    ('Usuários Padrão', 'Grupo de usuários com permissões padrão.', 2),
+    ('Gerentes', 'Grupo de usuários com funções de gerenciamento.', 1),
+    ('Suporte Técnico', 'Grupo de usuários responsáveis pelo suporte técnico.', 2),
+    ('Vendedores', 'Grupo de usuários responsáveis pelas vendas.', 1);
+    
+    INSERT INTO ItemPedido (PedidoId, ProdutoId, Quantidade, UsuarioAtualizacao) VALUES 
+    (1, 1, 2, 1),
+    (1, 2, 1, 1),
+    (2, 3, 3, 2),
+    (3, 1, 2, 1),
+    (4, 4, 1, 2);
+    
+    INSERT INTO Permissao (Nome, Descricao, UsuarioAtualizacao) VALUES 
+    ('Leitura', 'Permissão para leitura de dados.', 1),
+    ('Escrita', 'Permissão para escrever dados.', 2),
+    ('Atualização', 'Permissão para atualizar dados.', 1),
+    ('Exclusão', 'Permissão para excluir dados.', 2),
+    ('Administração', 'Permissão para administrar o sistema.', 1);
+    
+    
+
+
 
 
 -- 1. Atualizar o nome de um cliente:
@@ -73,6 +116,7 @@ INSERT INTO Categoria(Id, Nome, Descricao, DataCriacao, DataAtualizacao, Usuario
 ############## DQL - Sem Joins
 -- 1. Selecione todos os registros da tabela Produto:
 
+SELECT * FROM Produto
 
 -- 2. Selecione apenas o nome e o preço dos produtos da tabela Produto:
 
