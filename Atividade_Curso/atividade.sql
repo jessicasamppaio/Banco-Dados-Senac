@@ -1,5 +1,4 @@
 USE sistema_vendas;
-
 ################## DDL
 -- 1. Crie uma tabela chamada Fornecedor para armazenar informações sobre os fornecedores do sistema.
 -- id, nome, endereço, telefone, email e uma observação (text)
@@ -18,9 +17,9 @@ SELECT * FROM Fornecedor;
 -- 2. Adicione uma coluna chamada CNPJ à tabela Fornecedor para armazenar os números de CNPJ dos fornecedores.
 
 ALTER TABLE Fornecedor
-ADD CNPJ VARCHAR(14)
+ADD CNPJ VARCHAR(14);
 
--- 3. Adicione uma chave estrangeira à tabela Fornecedor para relacioná-la à tabela Categoria, representando a categoria do fornecedor.
+-- 3. Adicione uma chave estrangeira à tabela Fornecedor para relacioná-la à tabela Categoria, representando a categoria do fornecedor
 
 ALTER TABLE Fornecedor
 ADD FOREIGN KEY (Id) REFERENCES categoria(Id);
@@ -33,7 +32,7 @@ MODIFY COLUMN Telefone VARCHAR(15);
 -- 5. Remova a coluna Observacao da tabela Fornecedor, pois não é mais necessária.
 
 ALTER TABLE Fornecedor
-DROP COLUMN Observacao
+DROP COLUMN Observacao;
 
 -- 6. Remova a tabela Fornecedor do banco de dados, se existir.
 
@@ -41,8 +40,9 @@ DROP TABLE Fornecedor;
 
 #################### DML
 -- 0. Crie ao menos 5 registros para cada tabela, ignorando o gerneciamento de usuários. Um dos clientes deverá ter o seu nome
+	
 
-SELECT * FROM FormaPagamento
+SELECT * FROM Pedido;
 
 INSERT INTO Cliente (Nome, Email, Telefone, UsuarioAtualizacao) VALUES 
     ('Maria Silva', 'maria@email.com', '123456789', 1),
@@ -50,13 +50,20 @@ INSERT INTO Cliente (Nome, Email, Telefone, UsuarioAtualizacao) VALUES
     ('Ana Souza', 'ana@email.com', '555555555', 1),
     ('Pedro Oliveira', 'pedro@email.com', '111111111', 2),
     ('Carla Ferreira', 'carla@email.com', '999999999', 1);
+    
+    INSERT INTO Categoria (Nome, Descricao, UsuarioAtualizacao) VALUES 
+    ('Eletrônicos', 'Produtos eletrônicos e tecnológicos.', 1),
+    ('Roupas', 'Moda feminina, masculina e infantil.', 2),
+    ('Livros', 'Livros de diversos gêneros e autores.', 1),
+    ('Alimentos', 'Produtos alimentícios diversos.', 2),
+    ('Móveis', 'Móveis para casa e escritório.', 1);
 
     INSERT INTO Produto (Nome, Descricao, Preco, CategoriaID, UsuarioAtualizacao) VALUES 
     ('Camiseta', 'Camiseta na cor azul', 19.99, 1, 1),
     ('Calça jeans', 'Calça na cor preta', 29.99, 2, 1),
     ('Fone de ouvido', 'Fone bluetooth', 39.99, 1, 2),
     ('Shampoo', 'Shampoo para todos os tipos de cabelo', 49.99, 2, 2),
-    ('Arroz', '1kg de arroz', 09.99, 1, 3);
+    ('Arroz', '1kg de arroz', 9.99, 1, 3);
 
 
 INSERT INTO FormaPagamento (Nome, Descricao, UsuarioAtualizacao) VALUES 
@@ -70,27 +77,13 @@ INSERT INTO Pedido (ClienteID, DataPedido, FormaPagamentoId, Status, UsuarioAtua
     (4, '2024-03-14 13:20:00', 3, 'Concluído', 2),
     (5, '2024-03-14 14:10:00', 2, 'Em processamento', 1);
     
-    INSERT INTO Categoria (Nome, Descricao, UsuarioAtualizacao) VALUES 
-    ('Eletrônicos', 'Produtos eletrônicos e tecnológicos.', 1),
-    ('Roupas', 'Moda feminina, masculina e infantil.', 2),
-    ('Livros', 'Livros de diversos gêneros e autores.', 1),
-    ('Alimentos', 'Produtos alimentícios diversos.', 2),
-    ('Móveis', 'Móveis para casa e escritório.', 1);
-    
     INSERT INTO GrupoUsuario (Nome, Descricao, UsuarioAtualizacao) VALUES 
     ('Administradores', 'Grupo de usuários com permissões administrativas.', 1),
     ('Usuários Padrão', 'Grupo de usuários com permissões padrão.', 2),
     ('Gerentes', 'Grupo de usuários com funções de gerenciamento.', 1),
     ('Suporte Técnico', 'Grupo de usuários responsáveis pelo suporte técnico.', 2),
     ('Vendedores', 'Grupo de usuários responsáveis pelas vendas.', 1);
-    
-    INSERT INTO ItemPedido (PedidoId, ProdutoId, Quantidade, UsuarioAtualizacao) VALUES 
-    (1, 1, 2, 1),
-    (1, 2, 1, 1),
-    (2, 3, 3, 2),
-    (3, 1, 2, 1),
-    (4, 4, 1, 2);
-    
+
     INSERT INTO Permissao (Nome, Descricao, UsuarioAtualizacao) VALUES 
     ('Leitura', 'Permissão para leitura de dados.', 1),
     ('Escrita', 'Permissão para escrever dados.', 2),
@@ -100,11 +93,11 @@ INSERT INTO Pedido (ClienteID, DataPedido, FormaPagamentoId, Status, UsuarioAtua
     
     
    INSERT INTO Usuario (NomeUsuario, Senha, Email, GrupoUsuarioID, UsuarioAtualizacao) VALUES 
-    ('usuario1', 'senha123', 'usuario1@email.com', 1, 1),
-    ('usuario2', 'senha456', 'usuario2@email.com', 2, 1),
-    ('usuario3', 'senha789', 'usuario3@email.com', 1, 2),
-    ('usuario4', 'senhaabc', 'usuario4@email.com', 2, 2),
-    ('usuario5', 'senhaxyz', 'usuario5@email.com', 1, 3);
+    ('usuario', 'senha123', 'usuario@email.com', 1, 1),
+    ('usuarioDois', 'senha456', 'usuariodois@email.com', 2, 1),
+    ('usuarioTres', 'senha789', 'usuariotres@email.com', 1, 2),
+    ('usuarioQuatro', 'senhaabc', 'usuarioquatro@email.com', 2, 2),
+    ('usuarioCinco','haxyz', 'usuariocinco@email.com', 1, 3);
 
 
    INSERT INTO PermissaoGrupo (PermissaoID, GrupoUsuarioID) VALUES 
@@ -113,11 +106,20 @@ INSERT INTO Pedido (ClienteID, DataPedido, FormaPagamentoId, Status, UsuarioAtua
     (3, 2),
     (4, 2),
     (5, 3);
-
-
+    
+    
+    select * from itempedido;
+	INSERT INTO ItemPedido (PedidoId, ProdutoId, Quantidade, UsuarioAtualizacao) VALUES 
+    (1, 1, 2, 1),
+    (2, 2, 1, 1),
+    (3, 3, 3, 2),
+    (4, 1, 2, 1),
+    (5, 4, 1, 2);
+    
+    
 -- 1. Atualizar o nome de um cliente:
 
-UPDATE Clientes SET Nome = 'Camila Duarte' WHERE ID = 5;
+UPDATE Cliente SET Nome = 'Camila Duarte' WHERE ID = 5;
 
 -- 2. Deletar um produto:
 
@@ -126,8 +128,7 @@ DELETE FROM Produto WHERE ID = 5;
 -- 3. Alterar a categoria de um produto:
 
 UPDATE Produto SET CategoriaID = 2 WHERE ID = 1;
-
-
+    
 -- 4. Inserir um novo cliente:
 
 INSERT INTO Cliente (Nome, Email, Telefone, UsuarioAtualizacao) VALUES 
@@ -136,17 +137,16 @@ INSERT INTO Cliente (Nome, Email, Telefone, UsuarioAtualizacao) VALUES
 -- 5. Inserir um novo pedido:
 
 INSERT INTO Pedido (ClienteID, DataPedido, FormaPagamentoId, Status, UsuarioAtualizacao) VALUES 
-(6, '2024-09-11 10:00:00', 1, 'Concluído', 1),
+(6, '2024-09-11 10:00:00', 1, 'Concluído', 1);
 
 -- 6. Atualizar o preço de um produto:
 
 UPDATE Produto SET Preco = 59.99 WHERE ID = 1;
 
-
 ############## DQL - Sem Joins
 -- 1. Selecione todos os registros da tabela Produto:
 
-SELECT * FROM Produto
+SELECT * FROM Produto;
 
 -- 2. Selecione apenas o nome e o preço dos produtos da tabela Produto:
 
@@ -185,9 +185,7 @@ FROM Produto;
 
 -- 8. Selecione os produtos da tabela Produto, adicionando uma coluna calculada "Preço Total" multiplicando a quantidade pelo preço:
  
-SELECT *,
-Quantidade * Preco AS 'Preço Total'
-FROM Produto;
+-- não consegui fazer esse
 
 -- 9. Selecione os produtos da tabela Produto, mostrando apenas os 10 primeiros registros:
 
@@ -196,7 +194,6 @@ SELECT *
 FROM Produto
 LIMIT 10;
 
-
 -- 10. Selecione os produtos da tabela Produto, pulando os primeiros 5 registros e mostrando os 10 seguintes:
 
 -- Nesse também tive duvida
@@ -204,27 +201,20 @@ SELECT *
 FROM Produto
 LIMIT 10 OFFSET 5;
 
-
 ############# DQL - Joins
 -- 1. Selecione o nome do produto e sua categoria:
 SELECT Produto.Nome, Categoria.Nome
 FROM Produto
 INNER JOIN Categoria ON Produto.CategoriaID = Categoria.Id;
 
-
 -- 2. Selecione o nome do cliente e o nome do produto que ele comprou:
 
-SELECT Cliente.Nome, Produto.Nome
-FROM Cliente
-INNER JOIN Pedido ON Cliente.Id = Pedido.ClienteID
-INNER JOIN ItemPedido ON Pedido.Id = ItemPedido.PedidoId
-INNER JOIN Produto ON ItemPedido.ProdutoId = Produto.Id;
+-- Não consegui fazer funcionar
 
 -- 3. Selecione todos os produtos, mesmo aqueles que não têm uma categoria associada:
 SELECT Produto.Nome, Categoria.Nome
 FROM Produto
 LEFT JOIN Categoria ON Produto.CategoriaID = Categoria.Id;
-
 
 -- 4. Selecione todos os clientes, mesmo aqueles que não fizeram nenhum pedido:
 
@@ -232,32 +222,16 @@ SELECT Cliente.Nome, Pedido.Id
 FROM Cliente
 LEFT JOIN Pedido ON Cliente.Id = Pedido.ClienteID;
 
-
--- 5. Selecione todas as categorias, mesmo aquelas que não têm produtos associados:
-
-SELECT Categoria.Nome, Produto.Nome
-FROM Categoria
-LEFT JOIN Produto ON Categoria.Id = Produto.CategoriaID;
-
-
 -- 6. Selecione todos os produtos, mesmo aqueles que não foram pedidos:
 
 SELECT Produto.Nome, ItemPedido.Quantidade
 FROM Produto
 LEFT JOIN ItemPedido ON Produto.Id = ItemPedido.ProdutoId;
 
-
-
 ############### DQL com joins e demais filtros
 -- 1. Selecione o nome da categoria e o número de produtos nessa categoria, apenas para categorias com mais de 5 produtos:
 
--- esse foi necessário pesquisar pois perdi algumas aulas e não tinha entendido bem como fazer
-SELECT Categoria.Nome, COUNT(Produto.Id)
-FROM Categoria
-INNER JOIN Produto ON Categoria.Id = Produto.CategoriaID
-GROUP BY Categoria.Id
-HAVING COUNT(Produto.Id) > 5;
-
+-- não consegui
 
 -- 2. Selecione o nome do cliente e o total de pedidos feitos por cada cliente:
 
@@ -266,7 +240,6 @@ FROM Cliente
 LEFT JOIN Pedido ON Cliente.Id = Pedido.ClienteID
 GROUP BY Cliente.Id;
 
-
 -- 3. Selecione o nome do produto, o nome da categoria e a quantidade total de vendas para cada produto:
 SELECT Produto.Nome, Categoria.Nome, SUM(ItemPedido.Quantidade)
 FROM Produto
@@ -274,38 +247,24 @@ INNER JOIN Categoria ON Produto.CategoriaID = Categoria.Id
 LEFT JOIN ItemPedido ON Produto.Id = ItemPedido.ProdutoId
 GROUP BY Produto.Id;
 
-
--- 4. Selecione o nome da categoria, o número total de produtos nessa categoria e o número de pedidos para cada categoria:
-
---tive dificuldade nesse
-SELECT Categoria.Nome, COUNT(DISTINCT Produto.Id), COUNT(DISTINCT Pedido.Id)
-FROM Categoria
-LEFT JOIN Produto ON Categoria.Id = Produto.CategoriaID
-LEFT JOIN ItemPedido ON Produto.Id = ItemPedido.ProdutoId
-LEFT JOIN Pedido ON ItemPedido.PedidoId = Pedido.Id
-GROUP BY Categoria.Id;
-
-
 -- 5. Selecione o nome do cliente, o número total de pedidos feitos por esse cliente e a média de produtos por pedido, apenas para clientes que tenham feito mais de 3 pedidos:
 
--- Tive dificuldade nesse também
-SELECT Cliente.Nome,
-COUNT(DISTINCT Pedido.Id),
-AVG(COUNT(DISTINCT ItemPedido.ProdutoId))
-FROM Cliente
-LEFT JOIN Pedido ON Cliente.Id = Pedido.ClienteID
-LEFT JOIN ItemPedido ON Pedido.Id = ItemPedido.PedidoId
-GROUP BY Cliente.Id
-HAVING COUNT(DISTINCT Pedido.Id) > 3;
-
+-- Não consegui fazer esse
 
 ##### Crie uma View qualquer para qualquer um dos joins desenvolvidos
 
+
 ##### Crie uma transaction que cadastra um cliente e faça uma venda
+
 -- Início da transação
 
--- Inserir um novo cliente
+START TRANSACTION
 
+-- Inserir um novo cliente
+SELECT * FROM Pedido;
+
+INSERT INTO Cliente (Id, Nome, Email, Telefone, DataCriacao, DataAtualizacao, UsuarioAtualizacao, Ativo) VALUES
+('Fernanda Campos', 'fernanda@email.com', '628466789', 1)
 
 -- Inserir um novo pedido para o cliente
 
@@ -314,3 +273,6 @@ HAVING COUNT(DISTINCT Pedido.Id) > 3;
 
 
 -- Commit da transação (confirmação das alterações)
+
+
+    
