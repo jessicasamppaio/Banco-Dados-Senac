@@ -107,15 +107,13 @@ INSERT INTO Pedido (ClienteID, DataPedido, FormaPagamentoId, Status, UsuarioAtua
     (4, 2),
     (5, 3);
     
-    
-    select * from itempedido;
-	INSERT INTO ItemPedido (PedidoId, ProdutoId, Quantidade, UsuarioAtualizacao) VALUES 
-    (1, 1, 2, 1),
-    (2, 2, 1, 1),
-    (3, 3, 3, 2),
-    (4, 1, 2, 1),
-    (5, 4, 1, 2);
-    
+    -- essa tabela não funciona de jeito nenhum 
+	INSERT INTO itempedido (PedidoID, ProdutoID, Quantidade) VALUES
+    (1, 1, 2),
+    (2, 3, 10),
+    (3, 4, 1),
+    (4, 5, 3),
+    (5, 1, 3);
     
 -- 1. Atualizar o nome de um cliente:
 
@@ -141,7 +139,7 @@ INSERT INTO Pedido (ClienteID, DataPedido, FormaPagamentoId, Status, UsuarioAtua
 
 -- 6. Atualizar o preço de um produto:
 
-UPDATE Produto SET Preco = 59.99 WHERE ID = 1;
+UPDATE Produto SET Preco = 50.00 WHERE ID = 1;
 
 ############## DQL - Sem Joins
 -- 1. Selecione todos os registros da tabela Produto:
@@ -261,18 +259,24 @@ GROUP BY Produto.Id;
 START TRANSACTION
 
 -- Inserir um novo cliente
-SELECT * FROM Pedido;
 
 INSERT INTO Cliente (Id, Nome, Email, Telefone, DataCriacao, DataAtualizacao, UsuarioAtualizacao, Ativo) VALUES
-('Fernanda Campos', 'fernanda@email.com', '628466789', 1)
+('Fernanda Campos', 'fernanda@email.com', '628466789', 1);
 
 -- Inserir um novo pedido para o cliente
+
+INSERT INTO pedido (clienteId, DataPedido) VALUES (1, '2024-03-12');
+SET @novoPedidoID = last_insert_id();
 
 
 -- Inserir itens no pedido
 
+INSERT INTO itempedido (pedidoId, produtoId, quantidade)
+	values(@novoPedidoID, 4, 6);
 
 -- Commit da transação (confirmação das alterações)
+
+COMMIT;
 
 
     
