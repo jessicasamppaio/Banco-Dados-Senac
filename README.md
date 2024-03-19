@@ -32,4 +32,4 @@ Se você é participante do curso e deseja contribuir com este repositório, sin
  - [Roadmap SQL](https://roadmap.sh/sql): Roadmap indicando uma trilha de estudos em SQL.
  - [Normalização de Dados](https://learn.microsoft.com/pt-br/office/troubleshoot/access/database-normalization-description): Demonstração de aplicação das formas normais em banco de dados.
 
-[Informática Para Internet - Senac São Paulo]
+[Informática Para Internet - Senac São Paulo] 📝
